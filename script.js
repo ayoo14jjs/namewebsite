@@ -2,6 +2,7 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
+const wrapper = document.querySelector(".wrapper");
 
 // Change text and gif when the Yes button is clicked
 yesBtn.addEventListener("click", () => {
@@ -11,13 +12,11 @@ yesBtn.addEventListener("click", () => {
 
 // Make the No button move randomly on hover
 noBtn.addEventListener("mouseover", () => {
-  const wrapper = document.querySelector(".wrapper");
-  const wrapperRect = wrapper.getBoundingClientRect();
   const noBtnRect = noBtn.getBoundingClientRect();
 
   // Calculate max positions to ensure the button stays within the wrapper
-  const maxX = wrapperRect.width - noBtnRect.width;
-  const maxY = wrapperRect.height - noBtnRect.height;
+  const maxX = window.innerWidth - noBtnRect.width;
+  const maxY = window.innerHeight - noBtnRect.height;
 
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
