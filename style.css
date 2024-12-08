@@ -51,13 +51,12 @@ button {
 }
 
 button.yes-btn {
+    margin-left: -200px;
     background: #e94d58;
 }
 
 button.no-btn {
+    margin-right: -200px;
     background: white;
     color: #e94d58;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
