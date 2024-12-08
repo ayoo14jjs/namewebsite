@@ -12,19 +12,6 @@ body {
     background: whitesmoke;
 }
 
-h2 {
-    font-size: 2em;
-    color: #e94d58;
-    margin: 15px 0;
-}
-
-.btn-group {
-    margin-top: 50px;
-    justify-content: center;
-    display: flex;
-    width: 100%
-    height: 40px;
-
 .wrapper {
     position: relative;
     width: 100%;
@@ -32,9 +19,21 @@ h2 {
     text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+    color: #e94d58;
+    margin: 15px 0;
+}
+
 .gif {
     width: 100%;
     max-width: 300px;
+}
+
+.btn-group {
+    margin-top: 50px;
+    position: relative;
+    height: 40px;
 }
 
 button {
@@ -51,12 +50,12 @@ button {
 
 button.yes-btn {
     background: #e94d58;
-    margin-left: -200px;
 }
 
 button.no-btn {
     background: white;
     color: #e94d58;
-    margin-right: -200px;
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%);
 }
