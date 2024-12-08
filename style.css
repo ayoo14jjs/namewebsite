@@ -50,12 +50,12 @@ button {
 
 button.yes-btn {
     background: #e94d58;
+    margin-left: -200px;
 }
 
 button.no-btn {
     background: white;
     color: #e94d58;
-    position: absolute;
-    left: 50%;
+    margin-right: -200px;
     transform: translateX(-50%);
 }
